@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>regitration </title>
+<!--calling main.js file-->
+    <script src="js/main.js"></script> 
+    <script src="js/ajax.js"></script>
+    <script src="js/autoscroll.js"></script>
+
+<!--triggering CSS3 transitions using JS--> 
+<!--frist, creating a CSS property--> 
+<style type="text/css"> 
+div#box1 {
+  background: #9DCEFF; 
+  width: 400px; 
+  height: 140px;
+}
+</style>
+<!--using JS to chanbe background color of ChangeBG button button-->
+<script>
+function changeBG(el,clr) {
+  var elem = document.getElementById(el);
+  elem.style.transition = "background 1.0s linear 0s";
+  elem.style.background = clr;
+}
+
+</script>
+
+  </head>
+  
+  <body>
+<!--experimenting with CSS transitions using JS-->
+<button onclick="changeBG('box1', '#F0F');">Magenta</button>
+<button onclick="changeBG('box1', '#OCO');">Green</button>
+<button onclick="changeBG('box1', '#9DCEFF');">Original</button>
+<div id="box1">Lalalal land in box1..</div>
+
+
+
+
+<!--experimenting with modular JS-->
+        <div id="div1"></div>
+        <div id="div2"></div> 
+        <div id="div3"></div> 
+      
+      <script>
+        _("div1").innerHTML = "Howdy Doody Pilgrim";
+        _("div2").innerHTML = "woopy";
+        _("div3").innerHTML = "smash crush";
+      </script>
+      
+  </body>
+
+    </html>

@@ -1,0 +1,1 @@
+root is used as a public html folder with index file 
